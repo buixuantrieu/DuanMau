@@ -1,0 +1,110 @@
+.product__list--wrapper {
+  padding: 40px 100px;
+  background-color: #3e3e3f;
+  min-height: 400px;
+}
+.product__list--wrapper form {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.product__list--filter--wrapper {
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  align-items: center;
+}
+.product__list--filter--container label {
+  font-weight: bold;
+  margin-right: 4px;
+  color: white;
+}
+.product__list--filter--container select {
+  outline: none;
+  padding: 4px 8px;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+.product__list--filter--container input {
+  width: 200px;
+  outline: none;
+  padding: 4px 12px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+}
+.filter__submit {
+  padding: 6px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid white;
+}
+
+.product__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  gap: 40px;
+}
+.box__product--container {
+  width: calc(25% - 30px);
+  background-color: #323232;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(113, 112, 112, 0.38);
+}
+.product__title--new {
+  color: #ff9921;
+  padding: 4px 12px;
+  border-radius: 12px;
+  width: max-content;
+  border: 1px solid #ff9921;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.product__name {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin: 12px;
+  min-height: 48px;
+}
+.product__price {
+  color: #ff9921;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.product__price--sale {
+  font-weight: 100;
+  font-size: 14px;
+  color: gray;
+  text-decoration: line-through;
+}
+.product__sale {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+}
+.page__number--container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.page__number--element {
+  color: white;
+  padding: 2px 6px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.page__active {
+  background-color: black;
+}

@@ -1,0 +1,64 @@
+.my__order--wrapper {
+  padding: 40px 100px;
+  background-color: #3e3e3f;
+  min-height: 400px;
+}
+.my__order--container {
+  background-color: #091229;
+}
+.my__order--container table {
+  width: 100%;
+  color: white;
+}
+table tr {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.45);
+}
+table th {
+  padding: 12px 6px;
+}
+table td {
+  padding: 12px 6px;
+}
+.order__detail--img img {
+  width: 50px;
+}
+.order__detail--table th {
+  background-color: gray;
+}
+.order__detail--table td {
+  background-color: white;
+  color: black;
+}
+.table__detail {
+  display: none;
+}
+.active__table {
+  display: table-row;
+}
+.show__more {
+  cursor: pointer;
+}
+.button__canceled {
+  padding: 8px 12px;
+  background-color: rgb(198, 0, 0);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.button__canceled:hover {
+  color: white;
+  text-decoration: none;
+}
+.button__canceled[disabled] {
+  background-color: gray;
+}
+.review__product--button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #69b1ff;
+  border: 1px solid white;
+  color: white;
+}
+.review__product--button:hover {
+  background-color: #4096ff;
+}

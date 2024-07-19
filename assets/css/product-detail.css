@@ -1,0 +1,231 @@
+.product__detail--wrapper {
+  padding: 40px 100px;
+  background-color: #3e3e3f;
+  position: relative;
+}
+.product__detail--container {
+  display: flex;
+}
+.product__detail--left {
+  width: 50%;
+  padding-right: 20px;
+}
+.product__detail--right {
+  width: 50%;
+  padding: 20px 40px;
+  background-color: black;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.399);
+}
+.product__detail--category {
+  color: #d9d9d9;
+  font-weight: bold;
+}
+.product__detail--name {
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 4px;
+}
+.product__price {
+  color: #ff9921;
+  font-weight: bold;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
+  font-size: 24px;
+}
+.product__price--sale {
+  font-weight: 100;
+  font-size: 16px;
+  color: gray;
+  text-decoration: line-through;
+}
+.product__sale {
+  color: white;
+  font-size: 16px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color: rgb(237, 0, 0);
+  transform: translateY(-10px);
+  margin-left: 8px;
+}
+.price {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #d9d9d9;
+}
+.product__detail--endow {
+  background-color: #3e3e3f;
+  border-radius: 8px;
+  border: 1px solid gray;
+  overflow: hidden;
+  margin-top: 32px;
+}
+.endow__title {
+  color: white;
+  padding: 4px 12px;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid gray;
+}
+.endow__content {
+  padding: 12px;
+}
+.endow__content ul {
+  list-style: none;
+}
+.endow__content h5 {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+.endow__content ul li {
+  color: #d9d9d9;
+}
+.product__detail--quantity {
+  margin-top: 12px;
+}
+.product__detail--quantity label {
+  color: white;
+}
+.product__detail--quantity input {
+  width: 60px;
+  outline: none;
+  padding-left: 4px;
+}
+.product__detail--add--cart {
+  background-color: #096dd9;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.489);
+  color: white;
+  width: 100%;
+  margin-top: 32px;
+  padding: 16px 0;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 4px;
+  border: none;
+}
+.product__detail--add--cart:hover {
+  background-color: #091229;
+}
+.notification {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  width: max-content;
+  padding: 12px;
+  background-color: white;
+  color: black;
+  animation: 2s notification linear forwards;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.notification::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: rgb(0, 200, 0);
+  bottom: 0;
+  left: 0;
+  animation: 2s afterNotification linear forwards;
+}
+@keyframes afterNotification {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes notification {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  99% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    display: none;
+  }
+}
+.review__wrapper {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: white;
+  width: 50%;
+  border-radius: 4px;
+}
+.review__title {
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid gray;
+}
+.box__review {
+  margin-top: 12px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.163);
+  padding-bottom: 8px;
+}
+.avatar__name {
+  display: flex;
+  align-items: center;
+}
+.review__avatar {
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 2px solid #ff85c0;
+  background-size: cover;
+  background-position: center;
+  margin-right: 8px;
+}
+.review__star {
+  display: flex;
+  gap: 4px;
+  color: #ff9921;
+  font-size: 12px;
+}
+.review__name {
+  font-weight: bold;
+}
+.review__content {
+  margin-top: 12px;
+}
+.form__review--wrapper {
+  display: flex;
+  flex-flow: column;
+  margin-top: 12px;
+}
+.form__review--wrapper input {
+  margin-top: 12px;
+  background-color: black;
+  padding: 4px 0;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+}
+.rate__container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4px;
+}
+textarea {
+  outline: none;
+  padding: 4px;
+}
+.show__check {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(188, 1, 1);
+}
