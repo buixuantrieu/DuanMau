@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+img {
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 28px;
+  background-color: #091229;
+  color: white;
+  align-items: center;
+}
+.header__logo {
+  width: 200px;
+}
+.header__login--container {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+.header__nav--container {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+.header__login--container {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+}
+.header__nav--element {
+  text-decoration: none !important;
+  color: white;
+}
+.header__login--container a {
+  color: white;
+  text-decoration: none;
+}
+.header__nav--element:hover {
+  color: #ffc53d;
+}
+.header__cart {
+  position: relative;
+}
+.show__quantity--cart {
+  position: absolute;
+  padding: 4px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 9px;
+  right: -8px;
+  top: -8px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 1px solid #091229;
+}
+.header__avatar {
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px #c41d7f;
+  border: 1px solid #c41d7f;
+  width: 38px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.header__down {
+  position: relative;
+}
+.header__down:hover .menu__down {
+  display: flex;
+}
+.menu__down {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: max-content;
+  background-color: white;
+  z-index: 1000000;
+  display: flex;
+  flex-flow: column;
+  display: none;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.461);
+  border-radius: 4px;
+}
+.menu__down a {
+  font-size: 14px;
+  color: black;
+  padding: 6px 10px;
+}
+.menu__down a:hover {
+  background-color: black;
+  color: white;
+}
+.menu__down::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 30px;
+  right: 0;
+  top: -30px;
+}
+.order__success--wrapper {
+  min-height: 400px;
+  background-color: #3e3e3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order__success--container {
+  width: 320px;
+  background-color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px gray;
+}
+.order__success--title {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+.order__success--content {
+  font-size: 13px;
+  color: gray;
+}
+.order__success--button {
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 12px;
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+.order__success--button a {
+  color: black;
+}
+.order__success--button:hover a {
+  color: white;
+  text-decoration: none;
+}
+.order__success--button:hover {
+  background-color: black;
+}
+.menu__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  display: flex;
+  flex-flow: column;
+  padding-top: 30px;
+  display: none;
+}
+.menu__element {
+  color: white;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.menu__element:hover {
+  color: #ffc53d;
+}
+.menu__exit {
+  width: max-content;
+  color: white;
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header__menu {
+  display: none;
+}
+@media (max-width: 575.98px) {
+  .header__menu {
+    display: block;
+  }
+  .header__nav--container {
+    display: none;
+  }
+  .header__logo {
+    width: 130px;
+  }
+  .header__login--container {
+    font-size: 18px;
+    gap: 10px;
+  }
+  header {
+    padding: 12px 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header__nav--element {
+    font-size: 13px;
+  }
+  .header__login--container {
+    font-size: 18px;
+    gap: 10px;
+  }
+  .header__logo {
+    width: 130px;
+  }
+  header {
+    padding: 12px 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .header__nav--element {
+    font-size: 15px;
+  }
+  .header__login--container {
+    font-size: 20px;
+    gap: 15px;
+  }
+  .header__logo {
+    width: 170px;
+  }
+  header {
+    padding: 16px 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}

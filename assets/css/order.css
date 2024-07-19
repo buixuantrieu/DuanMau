@@ -1,0 +1,80 @@
+.order__wrapper {
+  padding: 40px 100px;
+  background-color: #3e3e3f;
+  min-height: 400px;
+}
+.order__container {
+  display: flex;
+  gap: 50px;
+}
+.order__box--left {
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px gray;
+  background-color: #091229;
+}
+.order__box--right {
+  flex: 1;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px gray;
+  color: white;
+}
+.order__image img {
+  width: 50px;
+}
+table {
+  width: 100%;
+  color: white;
+}
+table th {
+  padding: 8px;
+}
+table td {
+  padding: 6px 8px;
+}
+table tr {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.467);
+}
+.total__title {
+  font-weight: bold;
+  padding: 12px 0;
+}
+.total__price {
+  color: #ff9921;
+}
+.order__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.form__group {
+  display: flex;
+  flex-flow: column;
+}
+.form__group > input {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.1px dashed gray;
+  color: white;
+  padding: 1px 0;
+  margin-bottom: 12px;
+}
+
+.order__submit {
+  width: 100%;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+.form__group label {
+  font-weight: bold;
+  color: #ff9921;
+}

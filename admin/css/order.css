@@ -1,0 +1,75 @@
+.order__wrapper {
+  padding: 40px;
+}
+.order__title {
+  text-align: center;
+  font-family: "Rubik Moonrocks";
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 32px;
+}
+table {
+  width: 100%;
+  color: white;
+}
+table tr {
+  background-color: #091229;
+}
+table th {
+  padding: 12px 4px;
+}
+table tr {
+  background-color: #091229;
+  color: white;
+  border-bottom: 1px solid gray;
+}
+table td {
+  padding: 12px 4px;
+}
+img {
+  width: 50px;
+}
+.order__detail--table th {
+  background-color: gray;
+}
+.order__detail--table td {
+  background-color: white;
+  color: black;
+}
+select {
+  border: none;
+  outline: none;
+}
+.table__detail {
+  display: none;
+}
+.active__table {
+  display: table-row;
+}
+.show__more {
+  cursor: pointer;
+}
+.submit__update {
+  padding: 4px 12px;
+  background-color: #4096ff;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.submit__update[disabled] {
+  background-color: gray;
+}
+.delete__order {
+  padding: 6px 12px;
+  background-color: rgb(169, 0, 0);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: max-content;
+}
+.delete__order:hover {
+  color: white;
+  text-decoration: none;
+
+  background-color: red;
+}

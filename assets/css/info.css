@@ -1,0 +1,70 @@
+.info__wrapper {
+  padding: 40px;
+  background-color: #3e3e3f;
+  height: 100%;
+}
+.avatar__container {
+  width: 200px;
+  aspect-ratio: 1/1;
+  margin: 12px auto;
+  border: 2px solid white;
+  box-shadow: 0 0 20px white;
+  border-radius: 50%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.ps__form--container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  margin: 0 auto;
+}
+.ps__form__group {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+}
+.ps__form__group:nth-child(5) {
+  width: 100%;
+}
+.ps__submit {
+  width: 100%;
+  padding: 20px;
+}
+.ps__submit input {
+  width: 100%;
+  padding: 6px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.ps__form__group input {
+  outline: none;
+  background-color: transparent;
+  color: white;
+  padding: 4px;
+  border: none;
+  border-bottom: 0.1px dashed white;
+}
+.success {
+  width: 100%;
+  color: green;
+  padding: 0 20px;
+}
+.form__avatar {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  font-size: 30px;
+  width: max-content;
+  color: white;
+  filter: drop-shadow(0 0 10px white);
+}
+.ps__form__group label {
+  color: #ff9921;
+  font-weight: bold;
+}
