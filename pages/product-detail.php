@@ -5,7 +5,7 @@
     if ($check && isset($check)) {
     ?>
         <div class="notification">
-            hi
+            oke fix tiep
         </div>
     <?php
     } else if (!$check && isset($check)) {
