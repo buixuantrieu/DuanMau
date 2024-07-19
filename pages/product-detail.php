@@ -5,7 +5,7 @@
     if ($check && isset($check)) {
     ?>
         <div class="notification">
-            Thêm vào giỏ hàng thành công!
+            hi
         </div>
     <?php
     } else if (!$check && isset($check)) {
