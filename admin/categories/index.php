@@ -59,7 +59,7 @@
                             <td><?php echo $update_at ?></td>
                             <td class="operation">
                                 <a href="./index.php?page=update_category&&id=<?php echo $id ?>" class="update__product">Chỉnh sửa</a>
-                                <a onclick="return confirm('Bạn có muốn xóa <?php echo $name ?>?')" href="categories/delete.php?id=<?php echo $id ?>" class="delete__product">Xóa</a>
+                                <a onclick="return confirm('Bạn có muốn xóa <?php echo $name ?> hay không?')" href="categories/delete.php?id=<?php echo $id ?>" class="delete__product">Xóa</a>
                             </td>
                         </tr>
                     <?php
