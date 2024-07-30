@@ -104,7 +104,7 @@
                                 <?php echo $sale * 100 . '%' ?>
                             </td>
                             <td class="operation">
-                                <a href="./index.php?page=update_product&&id=<?php echo $id ?>" class="update__product">Cập nhật</a>
+                                <a href="./index.php?page=update_product&&id=<?php echo $id ?>" class="update__product">Chỉnh sửa</a>
                                 <a onclick="return confirm('Confirm deletion <?php echo $name ?>?')" href="products/delete.php?id=<?php echo $id ?>" class="delete__product">Xóa</a>
                             </td>
                         </tr>

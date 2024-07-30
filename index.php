@@ -252,8 +252,11 @@ include './model/forgot.php';
                     if (isset($_SESSION['auth'])) {
                         $order_list = get_order($_SESSION['auth']['id']);
                     }
-                    if (isset($_GET['canceled'])) {
+                    if (isset($_GET['canceled']) && isset($_GET['quantity']) && isset($_GET['product_id'])) {
                         canceled_order($_GET['canceled']);
+                        $quantity_update = $_GET['quantity'] * -1;
+
+                        update_quantity($_GET['product_id'], $quantity_update);
                     }
                     include './pages/my-order.php';
                     break;

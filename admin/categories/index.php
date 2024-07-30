@@ -58,8 +58,8 @@
                             <td><?php echo $create_at ?></td>
                             <td><?php echo $update_at ?></td>
                             <td class="operation">
-                                <a href="./index.php?page=update_category&&id=<?php echo $id ?>" class="update__product">Update</a>
-                                <a onclick="return confirm('Confirm deletion <?php echo $name ?>?')" href="categories/delete.php?id=<?php echo $id ?>" class="delete__product">Delete</a>
+                                <a href="./index.php?page=update_category&&id=<?php echo $id ?>" class="update__product">Chỉnh sửa</a>
+                                <a onclick="return confirm('Bạn có muốn xóa <?php echo $name ?>?')" href="categories/delete.php?id=<?php echo $id ?>" class="delete__product">Xóa</a>
                             </td>
                         </tr>
                     <?php
@@ -69,7 +69,7 @@
                 </tbody>
         </table>
 
-        <input class="submit__category" onclick="return confirm('delete selected items?')" type="submit" value=" Xóa các mục đã chọn">
+        <input class="submit__category" onclick="return confirm('Bạn có muốn xóa các mục đã chọn?')" type="submit" value=" Xóa các mục đã chọn">
         </form>
     </div>
 </div>

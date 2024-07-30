@@ -9,17 +9,17 @@
             <form action="" method="post">
                 <div class="form__group">
                     <label for="">Tên khách hàng:</label>
-                    <input type="text" name="full_name" value="<?php echo $_SESSION['auth']['full_name'] ?>">
+                    <input type="text" required name="full_name" value="<?php echo $_SESSION['auth']['full_name'] ?>">
                     <span class="error"></span>
                 </div>
                 <div class="form__group">
                     <label for="">Số điện thoại:</label>
-                    <input type="text" name="tel" value="<?php echo $_SESSION['auth']['tel'] ?>">
+                    <input type="text" required name="tel" value="<?php echo $_SESSION['auth']['tel'] ?>">
                     <span class="error"></span>
                 </div>
                 <div class="form__group">
                     <label for="">Địa chỉ:</label>
-                    <input type="text" name="address" value="<?php echo $_SESSION['auth']['address'] ?>">
+                    <input type="text" required name="address" value="<?php echo $_SESSION['auth']['address'] ?>">
                     <span class="error"></span>
                 </div>
                 <div class="form__group">

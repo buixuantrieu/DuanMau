@@ -34,17 +34,6 @@
             <div class="sale__logo">
                 <img src="assets/image/flash-sale.png" alt="">
             </div>
-            <!-- <div class="sale__time">
-                <div class="sale__time--title">Kết thúc trong</div>
-                <div class="sale__time--number--container">
-                    <div class="box__hour">
-                    </div>
-                    :
-                    <div class="box__minute"></div>
-                    :
-                    <div class="box__second"></div>
-                </div>
-            </div> -->
         </div>
         <div class="box__sale--product--wrapper">
             <div class="box__sale--product--container">
@@ -52,7 +41,12 @@
                 foreach ($list_sale_product as $sale_product) {
                     extract($sale_product);
                 ?>
-                    <a href="index.php?page=product-detail&&id=<?php echo $id ?>">
+                    <a style="position:relative" href="index.php?page=product-detail&&id=<?php echo $id ?>">
+                        <?php if ($quantity == 0) {
+                        ?>
+                            <div class="out__of--stock"></div>
+                        <?php
+                        } ?>
                         <div class="box__sale--product">
                             <div class="sale__product--image">
                                 <img src="uploadFiles/<?php echo $image ?>" alt="">
@@ -78,6 +72,11 @@
             extract($product_limit);
         ?>
             <a href="index.php?page=product-detail&&id=<?php echo $id ?>" class="box__product--container">
+                <?php if ($quantity == 0) {
+                ?>
+                    <div class="out__of--stock"></div>
+                <?php
+                } ?>
                 <div class="product__title--new">New</div>
                 <div class="product__image">
                     <img src="uploadFiles/<?php echo $image ?>" alt="">
@@ -104,6 +103,11 @@
             extract($product_limit);
         ?>
             <a href="index.php?page=product-detail&&id=<?php echo $id ?>" class="box__product--container">
+                <?php if ($quantity == 0) {
+                ?>
+                    <div class="out__of--stock"></div>
+                <?php
+                } ?>
                 <div class="product__title--new">New</div>
                 <div class="product__image">
                     <img src="uploadFiles/<?php echo $image ?>" alt="">
@@ -130,6 +134,11 @@
             extract($product_limit);
         ?>
             <a href="index.php?page=product-detail&&id=<?php echo $id ?>" class="box__product--container">
+                <?php if ($quantity == 0) {
+                ?>
+                    <div class="out__of--stock"></div>
+                <?php
+                } ?>
                 <div class="product__title--new">New</div>
                 <div class="product__image">
                     <img src="uploadFiles/<?php echo $image ?>" alt="">
@@ -156,6 +165,11 @@
             extract($product_limit);
         ?>
             <a href="index.php?page=product-detail&&id=<?php echo $id ?>" class="box__product--container">
+                <?php if ($quantity == 0) {
+                ?>
+                    <div class="out__of--stock"></div>
+                <?php
+                } ?>
                 <div class="product__title--new">New</div>
                 <div class="product__image">
                     <img src="uploadFiles/<?php echo $image ?>" alt="">
@@ -182,6 +196,11 @@
             extract($product_limit);
         ?>
             <a href="index.php?page=product-detail&&id=<?php echo $id ?>" class="box__product--container">
+                <?php if ($quantity == 0) {
+                ?>
+                    <div class="out__of--stock"></div>
+                <?php
+                } ?>
                 <div class="product__title--new">New</div>
                 <div class="product__image">
                     <img src="uploadFiles/<?php echo $image ?>" alt="">
@@ -208,6 +227,11 @@
             extract($product_limit);
         ?>
             <a href="index.php?page=product-detail&&id=<?php echo $id ?>" class="box__product--container">
+                <?php if ($quantity == 0) {
+                ?>
+                    <div class="out__of--stock"></div>
+                <?php
+                } ?>
                 <div class="product__title--new">New</div>
                 <div class="product__image">
                     <img src="uploadFiles/<?php echo $image ?>" alt="">

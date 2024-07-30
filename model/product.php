@@ -89,3 +89,14 @@ function update_quantity($id_product, $quantity)
     $sql = "UPDATE products SET quantity=quantity - $quantity WHERE products.id='$id_product'";
     pdo_execute($sql);
 }
+function get_all_product_deleted()
+{
+    $sql = "SELECT * FROM products WHERE products.is_delete=1";
+    $item = pdo_query($sql);
+    return $item;
+}
+function restore_product($id)
+{
+    $sql = "UPDATE products SET is_delete=0 WHERE products.id='$id'";
+    pdo_execute($sql);
+}

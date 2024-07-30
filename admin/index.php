@@ -112,6 +112,26 @@ include '../model/account.php';
                         $account_list = get_all_account();
                         include "customer/index.php";
                         break;
+                    case 'bins':
+                        if (isset($_GET['filter'])) {
+                            if ($_GET['filter'] == "products") {
+                                $deleted_list = get_all_product_deleted();
+                            } else if ($_GET['filter'] == "categories") {
+                                $deleted_list = get_all_category_deleted();
+                            }
+                        } else {
+                            $deleted_list = get_all_product_deleted();
+                        }
+                        if (isset($_GET['filter']) && isset($_GET['id']) && $_GET['filter'] == "products") {
+                            restore_product($_GET['id']);
+                            header('Location: index.php?page=bins&&filter=products');
+                        }
+                        if (isset($_GET['filter']) && isset($_GET['id']) && $_GET['filter'] == "categories") {
+                            restore_category($_GET['id']);
+                            header('Location: index.php?page=bins&&filter=categories');
+                        }
+                        include "bins/index.php";
+                        break;
                     default:
 
                         include 'home/index.php';

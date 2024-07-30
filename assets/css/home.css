@@ -103,6 +103,7 @@ a:hover {
   padding: 16px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(113, 112, 112, 0.38);
+  position: relative;
 }
 .product__title--new {
   color: #ff9921;
@@ -136,6 +137,17 @@ a:hover {
 }
 .product__sale {
   color: white;
+}
+.out__of--stock {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(../image/sold-out.png);
+  padding: 4px 12px;
+  background-size: 100%;
+  background-position: center;
+  width: 80px;
+  height: 80px;
 }
 
 @media (max-width: 575.98px) {

@@ -97,6 +97,11 @@
         ?>
             <a href="index.php?page=product-detail&&id=<?php echo $id ?>" class="box__product--container">
                 <div class="product__title--new">New</div>
+                <?php if ($quantity == 0) {
+                ?>
+                    <div class="out__of--stock"></div>
+                <?php
+                } ?>
                 <div class="product__image">
                     <img src="uploadFiles/<?php echo $image ?>" alt="">
                 </div>

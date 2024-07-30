@@ -417,3 +417,10 @@ textarea {
   font-size: 24px;
   font-weight: bold;
 }
+.bin__wrapper {
+  padding: 40px;
+}
+.bin__checkbox {
+  display: flex;
+  gap: 20px;
+}

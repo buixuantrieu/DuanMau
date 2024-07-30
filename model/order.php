@@ -18,25 +18,25 @@ function get_order($id)
 }
 function get_all_order($keyword)
 {
-    if ($keyword === "") {
+    if ($keyword == "") {
         $sql = "SELECT * FROM orders ORDER BY orders.create_at DESC";
         $item = pdo_query($sql);
         return $item;
     } else {
-        $sql = "SELECT * FROM orders JOIN order_details ON orders.id = order_details.order_id WHERE order_details.status LIKE '%$keyword%' ORDER BY orders.create_at DESC";
+        $sql = "SELECT *, order_details.status as order_status FROM orders JOIN order_details ON orders.id = order_details.order_id WHERE order_details.status LIKE '%$keyword%' ORDER BY orders.create_at DESC";
         $item = pdo_query($sql);
         return $item;
     }
 }
 function revenue_shop($year)
 {
-    $sql = "SELECT MONTH(create_at) as month , SUM(total_price) AS price_total FROM orders WHERE YEAR(create_at) ='$year' GROUP BY MONTH(create_at) ORDER BY MONTH(create_at)";
+    $sql = "SELECT MONTH(create_at) as month , SUM(price) AS price_total FROM orders  JOIN order_details ON orders.id = order_details.order_id WHERE order_details.status='Nhận hàng thành công' AND YEAR(create_at) ='$year' GROUP BY MONTH(create_at) ORDER BY MONTH(create_at)";
     $item = pdo_query($sql);
     return $item;
 }
 function revenue_total($month, $quarter, $year, $sort)
 {
-    $sql = "SELECT YEAR(create_at) as years ,QUARTER(create_at) as quarters , MONTH(create_at) as months ,SUM(total_price) as revenue FROM orders WHERE 1";
+    $sql = "SELECT YEAR(create_at) as years ,QUARTER(create_at) as quarters , MONTH(create_at) as months ,SUM(price) as revenue FROM orders JOIN order_details ON orders.id = order_details.order_id WHERE order_details.status='Nhận hàng thành công'";
     if ($month !== "") {
         $sql .= " AND MONTH(create_at)='$month'";
     }

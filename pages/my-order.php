@@ -59,7 +59,7 @@
                                         <?php
                                         } else {
                                         ?>
-                                            <a onclick="return confirm('Bạn có chắc chắn muốn hủy đơn hàng này?')" href="index.php?page=my-order&&canceled=<?php echo $order_detail_id ?>">
+                                            <a onclick="return confirm('Bạn có chắc chắn muốn hủy đơn hàng này?')" href="index.php?page=my-order&&canceled=<?php echo $order_detail_id ?>&&quantity=<?php echo $order_quantity ?>&&product_id=<?php echo $product_id ?>">
 
                                                 <button <?php
                                                         if ($status == "Đã hủy đơn hàng") {
