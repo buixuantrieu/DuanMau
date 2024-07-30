@@ -52,11 +52,9 @@
                                 <th></th>
                             </tr>
                             <?php
-                            if (isset($status)) {
-                                echo 1;
+                            if (isset($status)) {             
                                 $detail_list = get_order_detail($order_id, $status);
                             } else {
-                                echo 2;
                                 $detail_list = get_order_detail($id, "");
                             }
 
