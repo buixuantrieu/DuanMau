@@ -69,7 +69,7 @@
                 </tbody>
         </table>
 
-        <input class="submit__category" onclick="return confirm('delete selected items?')" type="submit" value=" Xóa các mục đã chọn">
+        <input class="submit__category" onclick="return confirm('Bạn có muốn xóa những sản phẩm này không?')" type="submit" value=" Xóa các mục đã chọn">
         </form>
     </div>
 </div>
