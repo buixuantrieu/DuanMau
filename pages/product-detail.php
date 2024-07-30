@@ -35,8 +35,11 @@
                     } ?>
                 </div>
                 <div class="product__detail--quantity">
+                    <label for="">Kho: còn <?php echo $quantity ?> sản phẩm.</label>
+                </div>
+                <div class="product__detail--quantity">
                     <label for="">Số lượng:</label>
-                    <input min="1" max="99" value="1" name="quantity" type="number">
+                    <input min="1" max="<?php echo $quantity ?>" value="1" name="quantity" type="number">
                 </div>
                 <div class="product__detail--endow">
                     <div class="endow__title">Ưu đãi</div>
@@ -49,7 +52,16 @@
                     </div>
                 </div>
                 <div>
-                    <input class="product__detail--add--cart" type="submit" name="add-to-cart" value="Thêm vào giỏ hàng">
+                    <?php if ($quantity == 0) {
+                    ?>
+                        <div style="background-color: black;border: 1px solid white; color:white; padding:16px; text-align: center; border-radius: 6px; margin-top:16px; font-weight: bold; font-size: 24px">Hết hàng</div>
+                    <?php
+                    } else {
+                    ?>
+                        <input class="product__detail--add--cart" type="submit" name="add-to-cart" value="Thêm vào giỏ hàng">
+                    <?php
+                    } ?>
+
                 </div>
             </form>
         </div>

@@ -39,16 +39,16 @@
                                 <th></th>
                             </tr>
                             <?php
-                            $order_details = get_order_detail($order_id);
+                            $order_details = get_order_detail($order_id, "");
                             foreach ($order_details as $item_detail) {
                                 extract($item_detail)
                             ?>
                                 <tr>
                                     <td><?php echo $name ?></td>
                                     <td class="order__detail--img"><img src="uploadFiles/<?php echo $image ?>" alt=""></td>
-                                    <td><?php echo $quantity ?></td>
+                                    <td><?php echo $order_quantity ?></td>
                                     <td><?php echo $status ?></td>
-                                    <td><?php echo number_format($price) ?>đ</td>
+                                    <td><?php echo number_format($order_price) ?>đ</td>
                                     <td>
                                         <?php
                                         if ($status === "Nhận hàng thành công") {

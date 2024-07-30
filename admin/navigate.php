@@ -1,5 +1,5 @@
 <div class="navigate__wrapper">
-    <div class="navigate__title">Xuan Trieu Shop</div>
+    <div class="navigate__title">Apple Store</div>
     <a href="index.php" class="navigate__element  <?php if (!isset($_GET['page'])) echo "navigate__active" ?>"><i class="fa-solid fa-house"></i> Trang chủ </a>
     <a href="index.php?page=products" class="navigate__element <?php if ($_GET['page'] === "products") echo "navigate__active" ?>"><i class="fa-solid fa-list"></i>Sản phẩm</a>
     <a href="index.php?page=categories" class="navigate__element <?php if ($_GET['page'] === "categories") echo "navigate__active" ?>"><i class="fa-brands fa-dropbox"></i> Loại hàng</a>

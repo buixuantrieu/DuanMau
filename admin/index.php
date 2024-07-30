@@ -70,12 +70,18 @@ include '../model/account.php';
                         include "./products/update.php";
                         break;
                     case 'orders':
-                        $order_list = get_all_order();
+                        if (isset($_POST['search_order']) && isset($_POST['keyword'])) {
+                            $order_list = get_all_order($_POST['keyword']);
+                        } else {
+                            $order_list = get_all_order("");
+                        }
+
                         if (isset($_POST['status-update']) && $_POST['id-detail']) {
                             update_status($_POST['status-update'], $_POST['id-detail']);
                         }
                         if (isset($_GET['delete'])) {
-                            delete_order_detail($_GET['delete']);
+
+                            delete_order_detail($_GET['delete'], $_GET['order_id']);
                             header('Location: index.php?page=orders');
                         }
                         include "orders/index.php";

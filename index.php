@@ -214,8 +214,9 @@ include './model/forgot.php';
                             $cart_list = get_cart_by_id($cart_item);
                             extract($cart_list);
                             $status = "Đang chờ xác nhận đơn hàng";
-                            $price = ($price - $price * $sale) * $quantity;
-                            create_order_detail($product_id, $order_id, $quantity, $status, $price);
+                            $price = ($price - $price * $sale) * $product_quantity;
+                            create_order_detail($product_id, $order_id, $product_quantity, $status, $price);
+                            update_quantity($product_id, $product_quantity);
                         }
                         foreach ($_SESSION['arr-cart'] as $cart_item) {
                             delete_cart($cart_item);

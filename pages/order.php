@@ -50,13 +50,13 @@
                 foreach ($arr_cart_list as $id_cart) {
                     $cart_item = get_cart_by_id($id_cart);
                     extract($cart_item);
-                    $total += ($price - $price * $sale) * $quantity;
+                    $total += ($price - $price * $sale) * $product_quantity;
                 ?>
 
                     <tr>
                         <td class="order__image"><img src="uploadFiles/<?php echo $image ?>" alt=""></td>
-                        <td><?php echo $quantity ?></td>
-                        <td><?php echo number_format(($price - $price * $sale) * $quantity) ?>đ</td>
+                        <td><?php echo $product_quantity ?></td>
+                        <td><?php echo number_format(($price - $price * $sale) * $product_quantity) ?>đ</td>
                     </tr>
                 <?php
                 }

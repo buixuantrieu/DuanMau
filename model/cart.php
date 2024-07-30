@@ -17,7 +17,7 @@ function add_to_cart($user_id, $product_id, $quantity)
 }
 function get_cart($user_id)
 {
-    $sql = "SELECT *,carts.id as cart_id FROM carts JOIN products ON products.id = carts.product_id WHERE user_id = '$user_id'";
+    $sql = "SELECT *,carts.id as cart_id,carts.quantity as quantity_cart FROM carts JOIN products ON products.id = carts.product_id WHERE user_id = '$user_id'";
     $item = pdo_query($sql);
     return $item;
 }
@@ -33,7 +33,7 @@ function delete_cart($id)
 }
 function get_cart_by_id($id)
 {
-    $sql = "SELECT * FROM carts JOIN products ON products.id = carts.product_id WHERE carts.id ='$id'";
+    $sql = "SELECT *, carts.quantity as product_quantity FROM carts JOIN products ON products.id = carts.product_id WHERE carts.id ='$id'";
     $item = pdo_query_one($sql);
     return $item;
 }

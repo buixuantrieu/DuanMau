@@ -2,7 +2,7 @@
 
 
 $time = time();
-session_start();
+// session_start();
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $create_at = date('Y-m-d H:i:s', $time);
 function create_account($user_name, $password, $email)

@@ -6,22 +6,22 @@
                 <i class="fa-solid fa-xmark"></i>
             </div>
             <div class="popup__title">
-                Add Category
+                Thêm loại hàng
             </div>
             <form action="categories/add.php" method="post">
                 <label for="">
-                    Name:
+                    Tên:
                 </label>
                 <input name="category-name" required type="text">
-                <input name="category-submit" type="submit" value="Add Product">
+                <input name="category-submit" type="submit" value="Thêm loại hàng">
                 <input type="reset" value="Reset">
             </form>
         </div>
     </div>
     <div class="product__button__popup">
         <form action="index.php?page=categories" method="post">
-            <input class="search__product" name="value__search" type="text" placeholder="Enter product name...">
-            <input class="submit__search" type="submit" value="Search">
+            <input class="search__product" name="value__search" type="text" placeholder="Nhập tên sản phẩm...">
+            <input class="submit__search" type="submit" value="Tìm kiếm">
         </form>
         <button class="button__popup">
             Add Category
@@ -36,11 +36,11 @@
             <thead>
                 <tr>
                     <th></th>
-                    <th>Code</th>
-                    <th>Name</th>
-                    <th>Create At</th>
-                    <th>Update At</th>
-                    <th>Operation</th>
+                    <th>Mã</th>
+                    <th>Tên</th>
+                    <th>Ngày tạo</th>
+                    <th>Chỉnh sửa gần nhất</th>
+                    <th>Theo tác</th>
                 </tr>
             </thead>
             <form action="categories/delete.php" method="post">

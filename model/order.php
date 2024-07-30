@@ -1,6 +1,6 @@
 <?php
 $time = time();
-session_start();
+// session_start();
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $create_at = date('Y-m-d H:i:s', $time);
 function create_order($full_name, $tel, $address, $user_id, $total, $payment)
@@ -16,11 +16,17 @@ function get_order($id)
     $item = pdo_query($sql);
     return $item;
 }
-function get_all_order()
+function get_all_order($keyword)
 {
-    $sql = "SELECT * FROM orders ORDER BY orders.create_at DESC";
-    $item = pdo_query($sql);
-    return $item;
+    if ($keyword === "") {
+        $sql = "SELECT * FROM orders ORDER BY orders.create_at DESC";
+        $item = pdo_query($sql);
+        return $item;
+    } else {
+        $sql = "SELECT * FROM orders JOIN order_details ON orders.id = order_details.order_id WHERE order_details.status LIKE '%$keyword%' ORDER BY orders.create_at DESC";
+        $item = pdo_query($sql);
+        return $item;
+    }
 }
 function revenue_shop($year)
 {

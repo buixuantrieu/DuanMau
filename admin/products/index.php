@@ -28,6 +28,8 @@
                 </select>
                 <label for="">Giá:</label>
                 <input name="product-price" required type="number">
+                <label for="">Số lượng:</label>
+                <input name="product-quantity" min="1" max="999" required type="number">
                 <label for="">Khuyến mãi:</label>
                 <input name="product-sale" required>
                 <label for="">Ảnh SP:</label>
@@ -70,6 +72,7 @@
                     <th>Tên sản phẩm</th>
                     <th>Ảnh</th>
                     <th>Giá</th>
+                    <th>Số lượng</th>
                     <th>Khuyến mãi</th>
                     <th>Chức năng</th>
                 </tr>
@@ -93,6 +96,9 @@
                             </td>
                             <td>
                                 <?php echo  number_format($price) . "đ" ?>
+                            </td>
+                            <td>
+                                <?php echo $quantity ?>
                             </td>
                             <td>
                                 <?php echo $sale * 100 . '%' ?>

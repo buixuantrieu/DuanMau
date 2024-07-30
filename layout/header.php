@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="header__logo">
-            <img src="./assets/image/logoXTShop.png" alt="">
+            <img src="./assets/image/Logo.png" alt="">
         </div>
         <div class="header__nav--container">
             <a href="index.php" class="header__nav--element">Trang chủ</a>

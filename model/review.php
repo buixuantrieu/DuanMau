@@ -1,6 +1,6 @@
 <?php
 $time = time();
-session_start();
+// session_start();
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $create_at = date('Y-m-d H:i:s', $time);
 function create_review($user_id, $product_id, $rate, $comment)

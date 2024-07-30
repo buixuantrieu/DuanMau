@@ -15,7 +15,8 @@ if (isset($_POST['product-submit']) && isset($_FILES['product-image'])) {
         $sale = $_POST['product-sale'];
         $category_id = $_POST['category'];
         $image = $picture['name'];
-        create_product($name, $image,  $price, $sale, $des, $category_id);
+        $quantity = $_POST['product-quantity'];
+        create_product($name, $image,  $price, $sale, $des, $category_id, $quantity);
         header('Location:../index.php?page=products ');
     } else {
         echo 'Image uploaded Error!';
