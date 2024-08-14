@@ -92,7 +92,7 @@ img {
 }
 .product__title {
   text-align: center;
-  font-family: "Rubik Moonrocks";
+  /* font-family: "Rubik Moonrocks"; */
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 32px;
@@ -308,7 +308,6 @@ img {
 .popup__title {
   text-align: center;
   margin-bottom: 12px;
-  font-family: "Rubik Moonrocks";
   font-size: 24px;
 }
 .popup__container label {

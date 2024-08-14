@@ -2,10 +2,10 @@
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <footer>
-    <div class="footer__title">Xuan Trieu Shop</div>
+    <div class="footer__title">Apple Store</div>
     <div class="footer__search">
         <input type="text" class="input__search" />
-        <button type="text" class="input__button">Search</button>
+        <button type="text" class="input__button">Tìm kiếm</button>
     </div>
     <div class="footer__content">
         <div class="footer__content--box">

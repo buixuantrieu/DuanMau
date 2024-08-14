@@ -1,3 +1,4 @@
+
 <div class="header__wrapper">
     <div class="header__avatar" style="background-image: url(../uploadFiles/<?php echo $_SESSION['auth']['avatar'] ?>);">
     </div>

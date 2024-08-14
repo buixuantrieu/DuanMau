@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php if (isset($_SESSION['auth']['role']) && $_SESSION['auth']['role'] === "admin") {
+    header("Location: ./admin/index.php");
+} ?>
 
 <head>
     <meta charset="UTF-8">

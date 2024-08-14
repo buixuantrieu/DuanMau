@@ -14,7 +14,7 @@
                     <option value="Nhận hàng thành công">Nhận hàng thành công</option>
                     <option value="Đã hủy đơn hàng">Đã hủy đơn hàng</option>
                 </select>
-                <button name="search_order" type="submit">Tìm kiếm</button>
+                <button name="search_order" type="submit" style="padding: 4px 12px; border: 1px solid black; background-color: white; border-radius: 4px">Tìm kiếm</button>
             </form>
         </div>
         <table>

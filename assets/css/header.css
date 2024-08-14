@@ -37,6 +37,7 @@ header {
 .header__nav--element {
   text-decoration: none !important;
   color: white;
+  font-size: 18px;
 }
 .header__login--container a {
   color: white;

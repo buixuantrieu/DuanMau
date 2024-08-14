@@ -17,7 +17,7 @@
         <form action="" method="post" class="ps__form--container">
             <div class="ps__form__group">
                 <label for="">Tên khách hàng:</label>
-                <input name="full-name" value="<?php echo $_SESSION['auth']['full_name'] ?>" type="text">
+                <input required name="full-name" value="<?php echo $_SESSION['auth']['full_name'] ?>" type="text">
                 <span></span>
             </div>
             <div class="ps__form__group">
@@ -27,17 +27,17 @@
             </div>
             <div class="ps__form__group">
                 <label for="">Số điện thoại:</label>
-                <input name="tel" value="<?php echo $_SESSION['auth']['tel'] ?>" type="text">
+                <input required name="tel" value="<?php echo $_SESSION['auth']['tel'] ?>" type="text">
                 <span></span>
             </div>
             <div class="ps__form__group">
                 <label for="">Birthday:</label>
-                <input name="birthday" value="<?php echo $_SESSION['auth']['birthday'] ?>" type="date">
+                <input required name="birthday" value="<?php echo $_SESSION['auth']['birthday'] ?>" type="date">
                 <span></span>
             </div>
             <div class="ps__form__group">
                 <label for="">Địa chỉ: </label>
-                <input name="address" value="<?php echo $_SESSION['auth']['address'] ?>" type="text">
+                <input required name="address" value="<?php echo $_SESSION['auth']['address'] ?>" type="text">
                 <span></span>
             </div>
             <div class="success">
